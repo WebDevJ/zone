@@ -109,7 +109,7 @@ $(function () {
                 }
                 if($('.do-sticky').length < 1) {
                     $('.company-logo img').attr('src', 'static/img/logos/black-logo.png');
-                }
+                } // added logo to /static 
             }
             else {
                 $('.sticky-header').removeClass('header-shrink');
