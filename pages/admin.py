@@ -1,3 +1,5 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Team
+# Register team model.
+admin.site.register(Team)
