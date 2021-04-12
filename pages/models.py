@@ -13,7 +13,7 @@ class Team(models.Model):
     google_plus_link = models.URLField(max_length=100)
     created_date = models.DateTimeField(auto_now_add=True)
 
-# to avoid having djangoadmin showing "team object 1" instad of names of team . we must make sure function refers to its self.
-def __unicode__(self):    
-    return self.first_name
+    # to avoid having djangoadmin showing "team object 1" we want first_names of team . we must make sure function refers to its self.
+    def __str__(self):    
+        return self.first_name
 
