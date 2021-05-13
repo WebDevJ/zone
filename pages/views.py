@@ -9,7 +9,11 @@ def home(request):
     return render(request, 'pages/home.html', data)
 
 def about(request):
-    return render(request, 'pages/about.html')
+    teams = Team.objects.all()
+    data = {
+        'teams' : teams,
+    }
+    return render(request, 'pages/about.html', data)
 
 def cars(request):
     return render(request, 'pages/cars.html')  
